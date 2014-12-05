@@ -7,23 +7,6 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         
-<script>
-    (function ($) {
-          $(document).ready(function() {
-          $("#show-example").click(function () {
-             if ($('#example').is(":visible")) {
-                 $(this).html($(this).html().replace(/Hide/, 'Show'));
-             } else {
-                 $(this).html($(this).html().replace(/Show/, 'Hide'));
-             }
-             // Do it afterwards as the operation is async
-             $("#example").slideToggle("slow");
-          });
-      });
-  })(jQuery);
-</script>
-
-
 <style type="text/css">
             /* Space out content a bit */
             body {
@@ -108,49 +91,65 @@ font-size: 14px;
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <!-- <li class="active">
-                        <a href="#">Welcome</a>
-                    </li> -->
-                    <li>
-                        <a href="#dispatch">Dispatch</a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
+
                 </ul><h2 class="text-muted">Safe Ride Digital</h2>
             </div>
             <div class="jumbotron">
-                <h3>Welcome to <b>Safe Ride Digital!</b></h3>
-                <p class="lead"><i>Safe Ride Digital</i> is an online portal to request after-hours transportation from River Campus properties and residences.</p>
+                <h3>Safe Ride Request</b></h3>
+<form>
 
-<a id="show-example" onclick="false">I'm new to Safe Ride. May I have more information?</a>
 
-<div id="example" style="display: none"> 
-<h4>SafeRide is made possible by the SA Government and UR Security Service. This portal exists as a separate medium to allow students to request pick-ups via their smartphone or laptop (or any device with a Wi-Fi connection). Any difficulties or technicalities that may arise remain independent of the previously mentioned entities.<br><br>
-                <b>Hours of Operation:</b> 11:00 p.m. – 4:00 a.m. everyday during the academic year (no breaks or University holidays)<br>
-                <b>River Campus Locations:</b> IT Center (Rush Rhees Library), Carlson Library, Todd Union<b>
- <br>Residential Locations:</b> Hill Court, Southside, Riverview Apartments<br>
-</h4>
- </div> 
-                <p></p>
-                <p>
-<a id="show-example" onclick="false">I'm ready to request a ride!</a>
+        <li class="input select optional" id="gem_awesomeness_input">
+          <label class="label" for="gem_awesomeness">Pick me up from...</label>
+<select id="gem_awesomeness" name="gem[awesomeness]">
 
-<div id="example" style="display:none">
-        <h3>Only University of Rochester undergraduates may use this service. Please sign in with your NetID and password so that we may verify this.</h3>
-      </center>
-      <form class="form-signin">
-        <h2 class="form-signin-heading"></h2>
-        <input type="text" class="form-control" placeholder="NetID">
-        <input type="password" class="form-control" placeholder="Password">
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me">Remember me</label>
-        <p><a class="btn btn-block btn-primary btn-lg" href="home.html">Sign In</a></p>
-        <!-- <button class="btn btn-block btn-primary btn-lg" onlick="#" href="home.html">Sign in</button> -->
-      </form>
-<!-- 
-<a class="btn btn-block btn-link btn-lg" href="request.html.erb">Let's request a ride!</a></p>
-      -->   </div>
+          <option value="1">IT Center (Rush Rhees Library)</option>
+          <option value="2">Carlson Library</option>
+          <option value="3">Todd Union</option>
+          <option value="4">Hill Court</option>
+          <option value="5">Southside</option>
+          <option value="6">Riverview Apartments</option>
+
+          </li>
+
+        <li class="input select optional" id="gem_awesomeness_input">
+          <label class="label" for="gem_awesomeness">Pick me up from...</label>
+<select id="gem_awesomeness" name="gem[awesomeness]">
+
+          <option value="1">IT Center (Rush Rhees Library)</option>
+          <option value="2">Carlson Library</option>
+          <option value="3">Todd Union</option>
+          <option value="4">Hill Court</option>
+          <option value="5">Southside</option>
+          <option value="6">Riverview Apartments</option>
+
+          </li>
+
+
+        <li class="input radio optional">
+          <fieldset class="choices">
+            <label class="label"><label>In addition to myself, please pick up: </label>
+            <ol class="choices-group">
+              <li class="choice">
+                <label><input id="gem_rate_five" name="gem[rate]" type="radio" checked="checked">+1 Passenger</label></label>
+              </li>
+              <li class="choice">
+                <label><input id="gem_rate_four" name="gem[rate]" type="radio">+2 Passengers</label></label>
+              </li>
+              <li class="choice">
+                <label><input id="gem_rate_three" name="gem[rate]" type="radio">+3 Passengers</label></label>
+              </li>
+          </fieldset>
+        </li>
+
+
+    <fieldset class="buttons">
+      <ol>
+        <li class="button commit">
+          <input class="create" id="gem_submit" type="submit">
+        </li>
+      </ol>
+    </fieldset>
 
    </div>
             <div class="footer">
