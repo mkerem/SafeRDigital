@@ -2,89 +2,79 @@
     <head>
         <title>Safe Ride Digital</title>
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/3.0.0/amelia/bootstrap.min.css">
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        
-<style type="text/css">
-            /* Space out content a bit */
-            body {
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            /* Everything but the jumbotron gets side spacing for mobile first views */
-            .header, .marketing, .footer {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            /* Custom page header */
-            .header {
-                border-bottom: 1px solid #e5e5e5;
-            }
-
-	h2, h3 {
-font-family: helvetica neue;
-}
-
- h4{
-font-size: 14px;
-}
-            /* Make the masthead heading the same height as the navigation */
-            .header h3 {
-                margin-top: 0;
-                margin-bottom: 0;
-                line-height: 40px;
-                padding-bottom: 19px;
-            }
-            /* Custom page footer */
-            .footer {
-                padding-top: 19px;
-                color: #777;
-                border-top: 1px solid #e5e5e5;
-            }
-            /* Customize container */
-            @media(min-width: 768px) {
-                .container {
-                    max-width: 730px;
-                }
-            }
-            .container-narrow > hr {
-                margin: 30px 0;
-            }
-            /* Main marketing message and sign up button */
-            .jumbotron {
-                text-align: center;
-                border-bottom: 1px solid #e5e5e5;
-            }
-            .jumbotron .btn {
-                font-size: 21px;
-                padding: 14px 24px;
-            }
-            /* Supporting marketing content */
-            .marketing {
-                margin: 40px 0;
-            }
-            .marketing p + h4 {
-                margin-top: 28px;
-            }
-            /* Responsive: Portrait tablets and up */
-            @media screen and(min-width: 768px) {
-                /* Remove the padding we set earlier */
-                .header, .marketing, .footer {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-                /* Space out the masthead */
-                .header {
-                    margin-bottom: 30px;
-                }
-                /* Remove the bottom border on the jumbotron for visual effect */
-                .jumbotron {
-                    border-bottom: 0;
-                }
-            }
-        </style>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      /* Space out content a bit */
+      body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      /* Everything but the jumbotron gets side spacing for mobile first views */
+      .header, .marketing, .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      /* Custom page header */
+      .header {
+        border-bottom: 1px solid #e5e5e5;
+      }
+      /* Make the masthead heading the same height as the navigation */
+      .header h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+      }
+      /* Custom page footer */
+      .footer {
+        padding-top: 19px;
+        color: #777;
+        border-top: 1px solid #e5e5e5;
+      }
+      /* Customize container */
+      @media(min-width: 768px) {
+        .container {
+          max-width: 730px;
+        }
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+      /* Supporting marketing content */
+      .marketing {
+        margin: 40px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      /* Responsive: Portrait tablets and up */
+      @media screen and(min-width: 768px) {
+        /* Remove the padding we set earlier */
+        .header, .marketing, .footer {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        /* Space out the masthead */
+        .header {
+          margin-bottom: 30px;
+        }
+        /* Remove the bottom border on the jumbotron for visual effect */
+        .jumbotron {
+          border-bottom: 0;
+        }
+      }
+    </style>
     </head>
     
     <body>
@@ -96,6 +86,44 @@ font-size: 14px;
             </div>
             <div class="jumbotron">
                 <h3>Safe Ride Request</b></h3>
+
+<!DOCTYPE html>
+
+
+<%= form_for :rides, url: rides_path do |f| %>
+  <p>Your full name:</p>
+   <!-- <%= f.label :Name %><br> -->
+    <%= f.text_field :Name %>
+  </p>
+
+<p>I'm currently located at...</p>
+<!-- <%= f.label :"I am currently located at..." %> <br> -->
+<%= f.select :Pickup, [["IT Center (Rush Rhees Library)"], ["Carlson"], ["Todd Union"], ["Hill Court"], ["Southside"], ["Riverview Apartments"]], { label: "I am currently located at..." }, { class: "selectpicker" } %>
+
+<br>
+<br>
+
+<p>Please drop me off at....</p>
+<!-- <%= f.label :"Please drop me off at..." %> <br> -->
+<%= f.select :Dropoff, [["Riverview Apartments"], ["IT Center (Rush Rhees Library)"], ["Carlson Library"], ["Todd Union"], ["Hill Court"], ["Southside"]], { label: "Please drop me off at..." }, { class: "selectpicker" } %>
+
+<br>
+<br>
+<p>In addition to myself, also pick up: </p>
+<%= f.select :Passengers, [["+1 Passenger"], ["+2 Passengers"]], { label: "In addition to myself, also pick up: "}, { class: "selectpicker"} %>
+
+  <p>
+  <!--  <%= f.label :Comments %><br>
+  <p>Comments?</p>
+  <%= f.text_field :Comments %>
+  <br>  -->
+
+  <p>
+    <%= f.submit :Submit! %>
+  </p>
+<% end %>
+
+<!--
 <form>
 
 
@@ -150,7 +178,7 @@ font-size: 14px;
         </li>
       </ol>
     </fieldset>
-
+-->
    </div>
             <div class="footer">
                 <p>&copy; DMS372 Capstone Project</p>

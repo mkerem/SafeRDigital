@@ -1,5 +1,9 @@
 class RidesController < ApplicationController
 
+def index
+@user = User.new
+end
+
 def new
 end
 
@@ -11,10 +15,15 @@ render plain: params[:rides].inspect
 #redirect_to @post
 end
 
+def show
+end
 #private
 #def post_params
 #params.require(:post).permit(:title, :text)
 #end
+
+def new2
+end
 
 #public
 #def show
