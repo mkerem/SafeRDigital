@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  full_name: MyString
-  text: MyText
+  name: MyString
+  Present: MyString
+  Dropoff: MyString
+  Passengers: MyString
 
 two:
-  full_name: MyString
-  text: MyText
+  name: MyString
+  Present: MyString
+  Dropoff: MyString
+  Passengers: MyString

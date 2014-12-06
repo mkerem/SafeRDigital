@@ -93,12 +93,12 @@
 <%= form_for :rides, url: rides_path do |f| %>
   <p>Your full name:</p>
    <!-- <%= f.label :Name %><br> -->
-    <%= f.text_field :Name %>
+    <%= f.text_field :name %>
   </p>
 
 <p>I'm currently located at...</p>
 <!-- <%= f.label :"I am currently located at..." %> <br> -->
-<%= f.select :Pickup, [["IT Center (Rush Rhees Library)"], ["Carlson"], ["Todd Union"], ["Hill Court"], ["Southside"], ["Riverview Apartments"]], { label: "I am currently located at..." }, { class: "selectpicker" } %>
+<%= f.select :Present, [["IT Center (Rush Rhees Library)"], ["Carlson"], ["Todd Union"], ["Hill Court"], ["Southside"], ["Riverview Apartments"]], { label: "I am currently located at..." }, { class: "selectpicker" } %>
 
 <br>
 <br>
@@ -109,8 +109,8 @@
 
 <br>
 <br>
-<p>In addition to myself, also pick up: </p>
-<%= f.select :Passengers, [["+1 Passenger"], ["+2 Passengers"]], { label: "In addition to myself, also pick up: "}, { class: "selectpicker"} %>
+<p>Any other passengers tagging along? </p>
+<%= f.select :Passengers, [["Just me!"],["+1 Passenger"], ["+2 Passengers"]], { label: "In addition to myself, also pick up: "}, { class: "selectpicker"} %>
 
   <p>
   <!--  <%= f.label :Comments %><br>

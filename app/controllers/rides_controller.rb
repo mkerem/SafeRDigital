@@ -8,22 +8,28 @@ def new
 end
 
 def create
+@rides = Rides.new(rides_params)
+@rides.save
+redirect_to @rides
 
-render plain: params[:rides].inspect
+#render plain: params[:rides].inspect
 #@post=Post.new(params[:post].permit(:title,:text))
 #@post.save
 #redirect_to @post
 end
 
+public
+def rides_params
+	params.require(:rides).permit(:name, :Present, :Dropoff, :Passengers)
+end
+
 def show
+@rides = Rides.find(params[:id])
 end
 #private
 #def post_params
 #params.require(:post).permit(:title, :text)
 #end
-
-def new2
-end
 
 #public
 #def show
