@@ -26,6 +26,12 @@ end
 def show
 @rides = Rides.find(params[:id])
 end
+
+def edit
+@rides = Rides.find(params[:id])
+end
+
+
 #private
 #def post_params
 #params.require(:post).permit(:title, :text)

@@ -2,14 +2,15 @@ Rails.application.routes.draw do
 
 get 'welcome/index'
  
-resources :rides
+resources :rides# do
 get 'rides/.:format' => 'dispatch#index'
+#get '/edit(.:format)' => 'dispatch#edit'
+#end
+get '/rides/:id/edit(.:format)' => 'dispatch#edit'
 
 root 'welcome#index' 
 
 get 'dispatch/index'
-
-
 
 #get 'rides(.:format)' => 'dispatch#index'
 

@@ -75,6 +75,27 @@
         }
       }
     </style>
+
+    <script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear(),nhour=d.getHours(),nmin=d.getMinutes(),ap;
+     if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nyear<1000) nyear+=1900;
+if(nmin<=9) nmin="0"+nmin;
+
+document.getElementById('clockbox').innerHTML=""+(nmonth+1)+"/"+ndate+"/"+nyear+" "+nhour+":"+nmin+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
   </head>
 
  <body>
@@ -84,14 +105,14 @@
                     <!-- <li class="active">
                         <a href="#">Welcome</a>
                     </li> -->
-                    <li>
-                        <a href="#"></a>
-                    </li>
+
+                       <li> <strong>Current time:</strong><div id="clockbox"></div> </li>
+               
                 </ul><h2 class="text-muted">Safe Ride Digital</h2>
             </div>
 
 <div class="jumbotron">
-<title>Confirm Your Request</title>
+<title>Confirmation</title>
 
 <center><h2>
 
