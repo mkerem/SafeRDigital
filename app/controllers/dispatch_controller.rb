@@ -8,6 +8,12 @@ def edit
 	@rides = Rides.find(params[:id])
 end
 
+def destroy
+	@rides = Rides.find(params[:id])
+	@rides.destroy
+	redirect_to rides_path
+end
+
 def update
 	@rides = Rides.find(params[:id])
 	

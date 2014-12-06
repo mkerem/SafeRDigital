@@ -19196,3 +19196,3980 @@ Processing by DispatchController#index as HTML
   [1m[35mRides Load (1.7ms)[0m  SELECT "rides".* FROM "rides"
   Rendered dispatch/index.html.erb within layouts/application (21.4ms)
 Completed 200 OK in 219ms (Views: 200.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/dispatch/edit" for 127.0.0.1 at 2014-12-06 16:28:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/dispatch/edit"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.5ms)
+
+
+Started GET "/rides/edit" for 127.0.0.1 at 2014-12-06 16:30:43 -0500
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mRides Load (43.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 138ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=edit):
+  app/controllers/rides_controller.rb:27:in `show'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (102.9ms)
+
+
+Started GET "/rides/edit" for 127.0.0.1 at 2014-12-06 16:42:30 -0500
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[35mRides Load (22.4ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 63ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=edit):
+  app/controllers/rides_controller.rb:27:in `show'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.7ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:42:37 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (473.7ms)
+Completed 500 Internal Server Error in 543ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:40: unknown regexp options - td
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:41: syntax error, unexpected '<'
+<td> Remove </td>
+ ^
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:43: unknown regexp options - td
+unmatched close parenthesis: /td>
+
+<!-- <td> link_to 'Edit', edit_ride_path(rides) );@output_buffer.safe_append='</
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:43: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:49: unknown regexp options - tabl
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:51: syntax error, unexpected '<'
+</div>
+ ^
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:52: unknown regexp options - bdy
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:53: unterminated string meets end of file
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:53: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/dispatch/index.html.erb:40: unknown regexp options - td
+  app/views/dispatch/index.html.erb:41: syntax error, unexpected '<'
+  app/views/dispatch/index.html.erb:43: unknown regexp options - td
+  app/views/dispatch/index.html.erb:43: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+  app/views/dispatch/index.html.erb:49: unknown regexp options - tabl
+  app/views/dispatch/index.html.erb:51: syntax error, unexpected '<'
+  app/views/dispatch/index.html.erb:52: unknown regexp options - bdy
+  app/views/dispatch/index.html.erb:53: unterminated string meets end of file
+  app/views/dispatch/index.html.erb:53: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.5ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:42:52 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 159ms (Views: 157.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:42:53 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.5ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 133ms (Views: 117.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:46:12 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 16:46:19 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 16:49:31 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 163ms (Views: 161.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:49:32 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:49:33 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 240ms (Views: 221.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 16:49:44 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.5ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.6ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 207ms (Views: 188.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:50:31 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 129ms (Views: 113.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:51:04 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 16:51:08 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.1ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:55:01 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.6ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 256ms (Views: 243.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:55:02 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 16:55:06 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.6ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 335ms (Views: 316.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:08 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.3ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:11 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:56:37 -0500
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/controllers/dispatch_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/dispatch_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.4ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 16:56:44 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 106ms (Views: 90.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 16:56:45 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 16:56:50 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.6ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:00:51 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (43.3ms)
+Completed 500 Internal Server Error in 54ms
+
+ActionView::Template::Error (undefined local variable or method `rides' for #<#<Class:0x007f8d6eddd4e0>:0x007f8d6c523ab8>):
+    38: 
+    39: <td> Show </td>
+    40: <td> Edit </td>
+    41: <td><%= link_to 'Destroy', rides_path(rides), method: :delete, data: { confirm: 'Are you sure about this deletion?' } %> </td>
+    42: 
+    43: <!-- <td> link_to 'Edit', edit_ride_path(rides) %></td> --> 
+    44: 
+  app/views/dispatch/index.html.erb:41:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122692335640'
+  app/views/dispatch/index.html.erb:32:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122692335640'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:01:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 167ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:01:03 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:01:04 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `ridesPath' for #<#<Class:0x007f8d6eddd4e0>:0x007f8d6c538328>):
+    38: 
+    39: <td> Show </td>
+    40: <td> Edit </td>
+    41: <td><%= link_to 'Destroy', rides_path(ridesPath), method: :delete, data: { confirm: 'Are you sure about this deletion?' } %> </td>
+    42: 
+    43: <!-- <td> link_to 'Edit', edit_ride_path(rides) %></td> --> 
+    44: 
+  app/views/dispatch/index.html.erb:41:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122692444360'
+  app/views/dispatch/index.html.erb:32:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122692444360'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.9ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:01:04 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.2ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `ridesPath' for #<#<Class:0x007f8d6eddd4e0>:0x007f8d6ed9d8e0>):
+    38: 
+    39: <td> Show </td>
+    40: <td> Edit </td>
+    41: <td><%= link_to 'Destroy', rides_path(ridesPath), method: :delete, data: { confirm: 'Are you sure about this deletion?' } %> </td>
+    42: 
+    43: <!-- <td> link_to 'Edit', edit_ride_path(rides) %></td> --> 
+    44: 
+  app/views/dispatch/index.html.erb:41:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122713463680'
+  app/views/dispatch/index.html.erb:32:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122713463680'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (36.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.8ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:01:12 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (57.7ms)
+Completed 200 OK in 150ms (Views: 148.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/rides.%2Frides" for 127.0.0.1 at 2014-12-06 17:01:18 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.%2Frides"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:01:29 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.3ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (93.2ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (undefined local variable or method `rides' for #<#<Class:0x007f8d6eddd4e0>:0x007f8d6d4e68b0>):
+    38: 
+    39: <td> Show </td>
+    40: <td> Edit </td>
+    41: <td><%= link_to 'Destroy', rides_path(rides), method: :delete, data: { confirm: 'Are you sure about this deletion?' } %> </td>
+    42: 
+    43: <!-- <td> link_to 'Edit', edit_ride_path(rides) %></td> --> 
+    44: 
+  app/views/dispatch/index.html.erb:41:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122700482940'
+  app/views/dispatch/index.html.erb:32:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122700482940'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (31.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (42.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:03:14 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 137ms (Views: 135.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:03:15 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:03:45 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:41: syntax error, unexpected '.', expecting ')'
+...link_to 'Destroy', rides_path(.:ride), method: :delete, data...
+...                               ^
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:41: syntax error, unexpected tLABEL
+...y', rides_path(.:ride), method: :delete, data: { confirm: 'A...
+...                               ^
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:41: syntax error, unexpected ')', expecting keyword_end
+... sure about this deletion?' } );@output_buffer.safe_append='...
+...                               ^):
+  app/views/dispatch/index.html.erb:41: syntax error, unexpected '.', expecting ')'
+  app/views/dispatch/index.html.erb:41: syntax error, unexpected tLABEL
+  app/views/dispatch/index.html.erb:41: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (119.2ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:03:52 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:41: syntax error, unexpected '.', expecting ')'
+...link_to 'Destroy', rides_path(.:ride), method: :delete, data...
+...                               ^
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:41: syntax error, unexpected tLABEL
+...y', rides_path(.:ride), method: :delete, data: { confirm: 'A...
+...                               ^
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:41: syntax error, unexpected ')', expecting keyword_end
+... sure about this deletion?' } );@output_buffer.safe_append='...
+...                               ^):
+  app/views/dispatch/index.html.erb:41: syntax error, unexpected '.', expecting ')'
+  app/views/dispatch/index.html.erb:41: syntax error, unexpected tLABEL
+  app/views/dispatch/index.html.erb:41: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.8ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:13:12 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.5ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 210ms (Views: 193.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:13:13 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:13:17 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.7ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:21:55 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.5ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 214ms (Views: 181.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:21:56 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:22:00 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/rides.1" for 127.0.0.1 at 2014-12-06 17:22:53 -0500
+Processing by RidesController#index as 
+Redirected to 
+Completed 500 Internal Server Error in 2ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:22:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 271ms (Views: 269.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:00 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:23:01 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 161ms (Views: 143.4ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:23:05 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.5ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:23:52 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.9ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 194ms (Views: 177.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:23:53 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:23:56 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.0ms)
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:24:23 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.3ms)
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:24:56 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag="}
+Completed 404 Not Found in 49ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides without an ID):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (220.0ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.3ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 158ms (Views: 156.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:32 -0500
+
+
+Started DELETE "/rides" for 127.0.0.1 at 2014-12-06 17:25:35 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:25:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:25:58 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:25:59 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.6ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 154ms (Views: 121.6ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/rides" for 127.0.0.1 at 2014-12-06 17:26:07 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag="}
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides without an ID):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.5ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:29:35 -0500
+
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  config/routes.rb:6:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.3ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:29:52 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (1.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 411ms (Views: 378.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:53 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:29:55 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:29:56 -0500
+
+
+Started DELETE "/rides" for 127.0.0.1 at 2014-12-06 17:30:01 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:31:27 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 166ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:28 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:31:29 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.7ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 184ms (Views: 156.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 84ms (Views: 82.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:31:53 -0500
+
+
+Started DELETE "/rides" for 127.0.0.1 at 2014-12-06 17:31:57 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.1ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (1.0ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 325ms (Views: 320.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:33:56 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:34:01 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.6ms)
+
+
+Started DELETE "/rides.5" for 127.0.0.1 at 2014-12-06 17:35:32 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.5"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:36:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 407ms (Views: 403.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:36:50 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:36:52 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.5ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 115ms (Views: 93.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.5ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 157ms (Views: 140.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:37:19 -0500
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:37:22 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:38:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 225ms (Views: 223.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:05 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:38:06 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 138ms (Views: 115.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/rides.1" for 127.0.0.1 at 2014-12-06 17:38:09 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/rides.1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 167ms (Views: 166.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:28 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:38:29 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/rides/1" for 127.0.0.1 at 2014-12-06 17:38:32 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"1"}
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides without an ID):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 161ms (Views: 160.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:38:56 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:38:57 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 107ms (Views: 80.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/rides/1" for 127.0.0.1 at 2014-12-06 17:39:00 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"1"}
+  [1m[35mRides Load (0.2ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 1]]
+  [1m[36m (17.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 327ms
+
+ActionView::MissingTemplate (Missing template rides/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/mkerem/Documents/test/blog/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:22 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:23 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:23 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:39:24 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 150ms (Views: 123.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/rides/2" for 127.0.0.1 at 2014-12-06 17:39:29 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"2"}
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "rides" WHERE "rides"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to 
+Completed 500 Internal Server Error in 5ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:13:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 108ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:39:45 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:39:46 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 148ms (Views: 122.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/rides/3" for 127.0.0.1 at 2014-12-06 17:39:49 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"3"}
+  [1m[35mRides Load (0.3ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 3]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `rides_index_url' for #<RidesController:0x007f8d70a516f8>):
+  app/controllers/rides_controller.rb:13:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:40:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 117ms (Views: 115.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:15 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:40:16 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.5ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 96ms (Views: 75.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/rides/4" for 127.0.0.1 at 2014-12-06 17:40:20 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"4"}
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "rides" WHERE "rides"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/rides
+Completed 302 Found in 38ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:40:20 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:40:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 127ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:40:47 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:40:48 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.7ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 172ms (Views: 143.6ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/rides/5" for 127.0.0.1 at 2014-12-06 17:40:56 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"5"}
+  [1m[35mRides Load (0.3ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 5]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started DELETE "/rides/5" for 127.0.0.1 at 2014-12-06 17:40:56 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"5"}
+  [1m[35mRides Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 35ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=5):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.7ms)
+
+
+Started DELETE "/rides/5" for 127.0.0.1 at 2014-12-06 17:41:12 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"5"}
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=5):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.1ms)
+
+
+Started DELETE "/rides/19" for 127.0.0.1 at 2014-12-06 17:41:40 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"19"}
+  [1m[35mRides Load (0.2ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (18.3ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 19]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 24ms (ActiveRecord: 19.8ms)
+
+
+Started DELETE "/rides/19" for 127.0.0.1 at 2014-12-06 17:41:40 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"19"}
+  [1m[35mRides Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 19]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=19):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.9ms)
+
+
+Started DELETE "/rides/6" for 127.0.0.1 at 2014-12-06 17:41:45 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"6"}
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "rides" WHERE "rides"."id" = ?[0m  [["id", 6]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started DELETE "/rides/6" for 127.0.0.1 at 2014-12-06 17:41:45 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"6"}
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 6]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=6):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:41:51 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:42:09 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:42:10 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:42:10 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:42:10 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:42:10 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 17:42:11 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:42:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 562ms (Views: 560.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:14 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:42:16 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.7ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 173ms (Views: 145.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2014-12-06 17:42:24 -0500
+Processing by RidesController#new as HTML
+  Rendered rides/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2014-12-06 17:42:34 -0500
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "rides"=>{"name"=>"MPK", "Present"=>"IT Center (Rush Rhees Library)", "Dropoff"=>"Riverview Apartments", "Passengers"=>"+1 Passenger"}, "commit"=>"Submit!"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (37.6ms)[0m  INSERT INTO "rides" ("Dropoff", "Passengers", "Present", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["Dropoff", "Riverview Apartments"], ["Passengers", "+1 Passenger"], ["Present", "IT Center (Rush Rhees Library)"], ["created_at", "2014-12-06 22:42:34.493006"], ["name", "MPK"], ["updated_at", "2014-12-06 22:42:34.493006"]]
+  [1m[36m (41.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/rides/23
+Completed 302 Found in 87ms (ActiveRecord: 78.9ms)
+
+
+Started GET "/rides/23" for 127.0.0.1 at 2014-12-06 17:42:34 -0500
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mRides Load (0.2ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 23]]
+  Rendered rides/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:34 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:35 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:42:48 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:42:49 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/rides/23" for 127.0.0.1 at 2014-12-06 17:43:08 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"23"}
+  [1m[35mRides Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 23]]
+  [1m[36m (284.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 287ms (ActiveRecord: 284.8ms)
+
+
+Started DELETE "/rides/23" for 127.0.0.1 at 2014-12-06 17:43:08 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"23"}
+  [1m[35mRides Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 23]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=23):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 130ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:45:29 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:45:30 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.7ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 191ms (Views: 161.8ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/rides/8" for 127.0.0.1 at 2014-12-06 17:45:48 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"8"}
+  [1m[35mRides Load (0.3ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 8]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started DELETE "/rides/8" for 127.0.0.1 at 2014-12-06 17:45:48 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"8"}
+  [1m[35mRides Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 8]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=8):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:46:24 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 156ms (Views: 155.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:25 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:46:26 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.6ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 133ms (Views: 101.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:46:33 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.2ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:34 -0500
+
+
+Started DELETE "/rides/7" for 127.0.0.1 at 2014-12-06 17:46:38 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"7"}
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mRide Load (0.3ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (149.5ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 7]]
+  [1m[36m (165.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "rides" WHERE "rides"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 422ms (ActiveRecord: 316.4ms)
+
+
+Started DELETE "/rides/7" for 127.0.0.1 at 2014-12-06 17:46:39 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"7"}
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 7]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=7):
+  app/controllers/rides_controller.rb:11:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.6ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.7ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 119ms (Views: 90.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:53 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:46:56 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:46:57 -0500
+
+
+Started DELETE "/rides/14" for 127.0.0.1 at 2014-12-06 17:47:14 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"14"}
+  [1m[35mRide Load (0.4ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "rides" WHERE "rides"."id" = ?  [["id", 14]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 28ms (ActiveRecord: 3.1ms)
+
+
+Started DELETE "/rides/14" for 127.0.0.1 at 2014-12-06 17:47:15 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"14"}
+  [1m[35mRide Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 14]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Ride with 'id'=14):
+  app/controllers/rides_controller.rb:12:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.5ms)
+
+
+Started DELETE "/rides/14" for 127.0.0.1 at 2014-12-06 17:47:47 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"14"}
+  [1m[36mRide Load (0.1ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 14]]
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Ride with 'id'=14):
+  app/controllers/rides_controller.rb:12:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.5ms)
+
+
+Started DELETE "/rides/14" for 127.0.0.1 at 2014-12-06 17:48:01 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"14"}
+  [1m[35mRides Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 14]]
+Completed 404 Not Found in 19ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=14):
+  app/controllers/rides_controller.rb:12:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.9ms)
+
+
+Started DELETE "/rides/14" for 127.0.0.1 at 2014-12-06 17:48:29 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"14"}
+  [1m[36mRide Load (0.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 14]]
+Completed 404 Not Found in 33ms
+
+ActiveRecord::RecordNotFound (Couldn't find Ride with 'id'=14):
+  app/controllers/rides_controller.rb:12:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.2ms)
+
+
+Started DELETE "/rides/14" for 127.0.0.1 at 2014-12-06 17:49:01 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"14"}
+  [1m[35mRides Load (0.1ms)[0m  SELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1  [["id", 14]]
+Completed 404 Not Found in 29ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=14):
+  app/controllers/rides_controller.rb:12:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 17:50:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 359ms (Views: 355.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:50:53 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:51:01 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 138ms (Views: 137.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:54:16 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 40ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:98: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:100: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/dispatch/index.html.erb:98: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/dispatch/index.html.erb:100: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.9ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:54:48 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 38ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:96: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:98: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/dispatch/index.html.erb:96: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/dispatch/index.html.erb:98: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.3ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.5ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 161ms (Views: 159.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:05 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:55:25 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:55:26 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 170ms (Views: 168.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:57:03 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:58:00 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 50ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:95: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:97: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/dispatch/index.html.erb:95: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/dispatch/index.html.erb:97: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.7ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 288ms (Views: 286.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:58:16 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:59:27 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.3ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 146ms (Views: 144.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:28 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 17:59:40 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 161ms (Views: 159.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 17:59:41 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 18:01:23 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 25ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:90: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/mkerem/Documents/test/blog/app/views/dispatch/index.html.erb:92: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/dispatch/index.html.erb:90: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/dispatch/index.html.erb:92: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.9ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (1.8ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 171ms (Views: 167.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 18:01:30 -0500
+
+
+Started DELETE "/rides/9" for 127.0.0.1 at 2014-12-06 18:01:43 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"9"}
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (18.0ms)[0m  [1mDELETE FROM "rides" WHERE "rides"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 25ms (ActiveRecord: 19.4ms)
+
+
+Started DELETE "/rides/9" for 127.0.0.1 at 2014-12-06 18:01:43 -0500
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "id"=>"9"}
+  [1m[36mRides Load (0.1ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 9]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Rides with 'id'=9):
+  app/controllers/rides_controller.rb:12:in `destroy'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.2ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2014-12-06 18:05:23 -0500
+Processing by RidesController#index as HTML
+Redirected to http://localhost:3000dispatch#index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 18:05:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 222ms (Views: 220.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:27 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 18:05:34 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.6ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 144ms (Views: 126.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 99ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:56 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:57 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 18:05:57 -0500

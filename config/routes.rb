@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 get 'welcome/index'
  
 resources :rides# do
+delete '/rides/:id' => 'rides#destroy'
+delete '/dispatch/index(.:format)' => 'rides#destroy'
 get 'rides/.:format' => 'dispatch#index'
 #get '/edit(.:format)' => 'dispatch#edit'
 #end
