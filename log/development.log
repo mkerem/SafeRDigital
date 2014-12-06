@@ -12128,3 +12128,1410 @@ Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:07:05 -0500
 
 
 Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:07:05 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:14:24 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (49.5ms)
+Completed 500 Internal Server Error in 102ms
+
+SyntaxError (/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:131: unknown regexp option - a
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:131: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:134: unknown regexp option - a
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:135: syntax error, unexpected '<'
+                    </li>
+                     ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:136: unknown regexp option - l
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:136: syntax error, unexpected '<'
+                </ul><h2 class="text-muted">Safe Ride Digital</h2>
+                      ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:136: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+                </ul><h2 class="text-muted">Safe Ride Digital</h2>
+                                                     ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:137: unknown regexp options - dv
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:138: syntax error, unexpected '<'
+            <div class="jumbotron">
+             ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:139: syntax error, unexpected '<'
+                <h3>Welcome to <b>Safe Ride Digital!</b></h3>
+                 ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:139: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+                <h3>Welcome to <b>Safe Ride Digital!</b></h3>
+                              ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:139: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+                <h3>Welcome to <b>Safe Ride Digital!</b></h3>
+                                           ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:139: unknown regexp option - h
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:139: syntax error, unexpected tINTEGER, expecting ')'
+                <h3>Welcome to <b>Safe Ride Digital!</b></h3>
+                                                            ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:140: syntax error, unexpected '<'
+...              <p class="lead"><i>Safe Ride Digital</i> is an...
+...                               ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:140: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...   <p class="lead"><i>Safe Ride Digital</i> is an online por...
+...                               ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:140: unknown regexp option - p
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:142: syntax error, unexpected '<'
+<a id="show-example" onclick="...
+ ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:142: syntax error, unexpected tIDENTIFIER, expecting ')'
+<a id="show-example" onclick="false">I\'m new to Safe Rid...
+                            ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:142: syntax error, unexpected $undefined, expecting keyword_do or '{' or '('
+...how-example" onclick="false">I\'m new to Safe Ride. May I ha...
+...                               ^
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:183: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/mkerem/Documents/test/blog/app/views/welcome/index.html.erb:185: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/welcome/index.html.erb:131: unknown regexp option - a
+  app/views/welcome/index.html.erb:131: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+  app/views/welcome/index.html.erb:134: unknown regexp option - a
+  app/views/welcome/index.html.erb:135: syntax error, unexpected '<'
+  app/views/welcome/index.html.erb:136: unknown regexp option - l
+  app/views/welcome/index.html.erb:136: syntax error, unexpected '<'
+  app/views/welcome/index.html.erb:136: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.erb:137: unknown regexp options - dv
+  app/views/welcome/index.html.erb:138: syntax error, unexpected '<'
+  app/views/welcome/index.html.erb:139: syntax error, unexpected '<'
+  app/views/welcome/index.html.erb:139: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.erb:139: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.erb:139: unknown regexp option - h
+  app/views/welcome/index.html.erb:139: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/welcome/index.html.erb:140: syntax error, unexpected '<'
+  app/views/welcome/index.html.erb:140: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.erb:140: unknown regexp option - p
+  app/views/welcome/index.html.erb:142: syntax error, unexpected '<'
+  app/views/welcome/index.html.erb:142: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/welcome/index.html.erb:142: syntax error, unexpected $undefined, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.erb:183: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/welcome/index.html.erb:185: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (42.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (26.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (116.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:15:20 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 372ms (Views: 370.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:15:21 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:16:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (55.2ms)
+Completed 200 OK in 306ms (Views: 300.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:05 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:05 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:05 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:05 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:06 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:06 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:06 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:16:08 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 344ms (Views: 342.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:16:44 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 738ms (Views: 736.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:45 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:45 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:16:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:46 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:46 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:46 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:16:46 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:16:55 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 441ms (Views: 435.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:17:16 -0500
+Processing by DispatchController#index as HTML
+  Rendered dispatch/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 157ms (Views: 153.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2014-12-06 00:18:06 -0500
+Processing by RidesController#new as HTML
+  Rendered rides/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 473ms (Views: 471.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2014-12-06 00:18:20 -0500
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "rides"=>{"name"=>"Testing 100th time", "Present"=>"Hill Court", "Dropoff"=>"Todd Union", "Passengers"=>"Just me!"}, "commit"=>"Submit!"}
+  [1m[35m (59.6ms)[0m  begin transaction
+  [1m[36mSQL (75.7ms)[0m  [1mINSERT INTO "rides" ("Dropoff", "Passengers", "Present", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["Dropoff", "Todd Union"], ["Passengers", "Just me!"], ["Present", "Hill Court"], ["created_at", "2014-12-06 05:18:20.331391"], ["name", "Testing 100th time"], ["updated_at", "2014-12-06 05:18:20.331391"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/rides/16
+Completed 302 Found in 290ms (ActiveRecord: 137.0ms)
+
+
+Started GET "/rides/16" for 127.0.0.1 at 2014-12-06 00:18:20 -0500
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mRides Load (0.1ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered rides/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:18:20 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:18:20 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:18:21 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:21:14 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.6ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (650.4ms)
+Completed 500 Internal Server Error in 755ms
+
+ActionView::Template::Error (undefined local variable or method `rides' for #<#<Class:0x007f8d6c017790>:0x007f8d6d584420>):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= rides.name %></td>
+    28: <td><%= rides.Present %></td>
+    29: <td><%= rides.Dropoff %></td>
+    30: <td><%= rides.Passengers %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122700830740'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122700830740'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (97.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (233.7ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:23:00 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.6ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (170.0ms)
+Completed 500 Internal Server Error in 210ms
+
+ActionView::Template::Error (undefined local variable or method `rides' for #<#<Class:0x007f8d6c017790>:0x007f8d6e954108>):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= rides.Present %></td>
+    28: <td><%= rides.Present %></td>
+    29: <td><%= rides.Dropoff %></td>
+    30: <td><%= rides.Passengers %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122711215140'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122711215140'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (42.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.5ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:23:54 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (78.3ms)
+Completed 500 Internal Server Error in 103ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (65.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (144.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 357ms (Views: 356.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:24:14 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:24:43 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122714573380'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122714573380'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.1ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:24:44 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.2ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.1ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:27:46 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (1.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (70.0ms)
+Completed 500 Internal Server Error in 239ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122714573380'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122714573380'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (140.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (202.7ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:27:47 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.5ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.4ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:39:21 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (16.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (27.8ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 264ms (Views: 262.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:39:26 -0500
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:39:28 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.2ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:39:28 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:40:47 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 10ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.6ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:40:47 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:42:08 -0500
+
+ActionController::RoutingError (undefined local variable or method `x' for RidesController:Class):
+  app/controllers/rides_controller.rb:2:in `<class:RidesController>'
+  app/controllers/rides_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:42:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 292ms (Views: 290.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:42:13 -0500
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:42:15 -0500
+
+ActionController::RoutingError (undefined local variable or method `x' for RidesController:Class):
+  app/controllers/rides_controller.rb:2:in `<class:RidesController>'
+  app/controllers/rides_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.6ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:42:15 -0500
+
+ActionController::RoutingError (undefined local variable or method `x' for RidesController:Class):
+  app/controllers/rides_controller.rb:2:in `<class:RidesController>'
+  app/controllers/rides_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 239ms (Views: 234.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:43:40 -0500
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:43:43 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.9ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2014-12-06 00:43:43 -0500
+Processing by RidesController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/rides_controller.rb:4:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:44:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 156ms (Views: 154.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:44:49 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:44:50 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (17.3ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (74.2ms)
+Completed 500 Internal Server Error in 135ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122714573380'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122714573380'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.3ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:44:50 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= t.timestamps %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122713637840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.3ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 149ms (Views: 148.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:45:33 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:47:32 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.9ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (157.2ms)
+Completed 500 Internal Server Error in 171ms
+
+ActionView::Template::Error (undefined local variable or method `rides' for #<#<Class:0x007f8d70d095f8>:0x007f8d6d6ff250>):
+    24: 
+    25: <%= @rides.each do |ride| %>
+    26: <tr>
+    27: <td><%= rides.created_at %></td>
+    28: <td><%=  %></td>
+    29: <td><%=  %></td>
+    30: <td><%= %></td>
+  app/views/dispatch/index.html.erb:27:in `block in _app_views_dispatch_index_html_erb___1749419361125823860_70122701582160'
+  app/views/dispatch/index.html.erb:25:in `_app_views_dispatch_index_html_erb___1749419361125823860_70122701582160'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (31.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.0ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 306ms (Views: 305.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:48 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:48 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:47:48 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:48:42 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.9ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 364ms (Views: 355.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:48:43 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.2ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 136ms (Views: 134.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:49:24 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:50:49 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 283ms (Views: 281.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:50:50 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:51:13 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.3ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:14 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:51:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 178ms (Views: 176.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:38 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:38 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:51:39 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:51:42 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 92ms (Views: 90.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2014-12-06 00:51:51 -0500
+Processing by RidesController#new as HTML
+  Rendered rides/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 164ms (Views: 163.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UV2H4zcY0CgDQGamT/OWhMtZ6s/bSkPCx15HtxCeaag=", "rides"=>{"name"=>"Late at night", "Present"=>"Carlson", "Dropoff"=>"Southside", "Passengers"=>"+2 Passengers"}, "commit"=>"Submit!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (42.1ms)[0m  [1mINSERT INTO "rides" ("Dropoff", "Passengers", "Present", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["Dropoff", "Southside"], ["Passengers", "+2 Passengers"], ["Present", "Carlson"], ["created_at", "2014-12-06 05:52:02.445174"], ["name", "Late at night"], ["updated_at", "2014-12-06 05:52:02.445174"]]
+  [1m[35m (37.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/rides/17
+Completed 302 Found in 85ms (ActiveRecord: 80.0ms)
+
+
+Started GET "/rides/17" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mRides Load (0.2ms)[0m  [1mSELECT  "rides".* FROM "rides"  WHERE "rides"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered rides/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:02 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:52:15 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:16 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:16 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:16 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:52:16 -0500
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:52:17 -0500
+Processing by DispatchController#index as HTML
+  [1m[35mRides Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+  Rendered dispatch/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 107ms (Views: 106.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-06 00:53:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 244ms (Views: 243.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rides.css?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/dispatch.css?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/dispatch.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/rides.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-06 00:53:18 -0500
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2014-12-06 00:53:43 -0500
+Processing by RidesController#new as HTML
+  Rendered rides/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 132ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dispatch/index" for 127.0.0.1 at 2014-12-06 00:53:56 -0500
+Processing by DispatchController#index as HTML
+  [1m[36mRides Load (0.3ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+  Rendered dispatch/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 126ms (Views: 125.2ms | ActiveRecord: 0.3ms)

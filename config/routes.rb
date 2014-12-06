@@ -8,6 +8,11 @@ get 'rides/.:format' => 'dispatch#index'
 root 'welcome#index' 
 
 get 'dispatch/index'
+
+
+
+#get 'rides(.:format)' => 'dispatch#index'
+
 # wait, should I uncomment this?
 # get 'welcome/index'
 

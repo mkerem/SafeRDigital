@@ -9,3 +9,29 @@
         
 Where all the fun begins...
 
+
+<table>
+<tr>
+<th>Time Stamp</th>
+
+<th>Name</th>
+
+<th>Pick Up</th>
+
+<th>Drop Off</th>
+
+<th>Passengers</th>
+
+</tr>
+
+<% @rides.each do |ride| %>
+<td><%= ride.created_at %> </td>
+<td><%= ride.name %></td>
+<td><%= ride.Present %></td>
+<td><%= ride.Dropoff %></td>
+<td><%= ride.Passengers %></td>
+</tr>
+
+<% end %>
+
+</table>

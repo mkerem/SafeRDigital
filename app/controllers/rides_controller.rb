@@ -1,7 +1,7 @@
 class RidesController < ApplicationController
 
 def index
-@user = User.new
+redirect_to @dispatch
 end
 
 def new
