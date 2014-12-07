@@ -2,9 +2,20 @@ Rails.application.routes.draw do
 
 get 'welcome/index'
  
-resources :rides
+resources :rides# do
+delete '/rides/:id' => 'rides#destroy'
+delete '/dispatch/index(.:format)' => 'rides#destroy'
+get 'rides/.:format' => 'dispatch#index'
+#get '/edit(.:format)' => 'dispatch#edit'
+#end
+get '/rides/:id/edit(.:format)' => 'dispatch#edit'
 
 root 'welcome#index' 
+
+get 'dispatch/index'
+
+#get 'rides(.:format)' => 'dispatch#index'
+
 # wait, should I uncomment this?
 # get 'welcome/index'
 
@@ -15,7 +26,8 @@ root 'welcome#index'
    # root 'welcome#index'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  # get 'rides/.:format' => 'dispatch#index'
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
