@@ -23,21 +23,6 @@
   })(jQuery);
 </script>
 
-<script>
-(function ($) {
-	$(document).ready(function() {
-	$("#show-example2").click(function () {
-	if ($('#example2').is(":visible")) {
-	$(this).html($(this).html().replace(/Hide/, 'Show'));
-	} else {
-	$(this).html($(this).html().replace(/Show/, 'Hide'));
-	}
-	$("#example2").slideToggle("slow");
-	});
-	});
-})(jQuery);
-</script>
-
 
 <style type="text/css">
             /* Space out content a bit */
@@ -127,8 +112,7 @@ font-size: 14px;
                         <a href="#">Welcome</a>
                     </li> -->
                     <li>
-			<%= link_to 'Dispatch', controller: 'dispatch' %>
-                        <!-- <a href="dispatch#index">Dispatch</a> -->
+                        <a href="#dispatch">Dispatch</a>
                     </li>
                     <li>
                         <a href="#"></a>
@@ -150,25 +134,24 @@ font-size: 14px;
  </div> 
                 <p></p>
                 <p>
-<a id="show-example2" onclick="false">I'm ready to request a ride!</a>
+<a id="show-example" onclick="false">I'm ready to request a ride!</a>
 
-
-<div id="example2" style="display:none">
+<div id="example" style="display:none">
         <h3>Only University of Rochester undergraduates may use this service. Please sign in with your NetID and password so that we may verify this.</h3>
       </center>
 
+      
       <form class="form-signin">
         <h2 class="form-signin-heading"></h2>
         <input type="text" class="form-control" placeholder="NetID">
         <input type="password" class="form-control" placeholder="Password">
         <label class="checkbox">
-        <input type="checkbox" value="remember-me"><h5 style="text-align:left">Remember me</h5></label></style>
-
-        <p><a class="btn btn-block btn-primary btn-lg" href="rides/new">Sign In</a></p>
-        <!-- <button class="btn btn-block btn-primary btn-lg" onlick="#" href="home.html">Sign in</button> 
-</form> -->
+          <input type="checkbox" value="remember-me">Remember me</label>
+        <p><a class="btn btn-block btn-primary btn-lg" href="home.html">Sign In</a></p>
+        <!-- <button class="btn btn-block btn-primary btn-lg" onlick="#" href="home.html">Sign in</button> -->
+      </form>
 <!-- 
-<a class="btn btn-block btn-link btn-lg" href="rides/new">Let's request a ride!</a></p>
+<a class="btn btn-block btn-link btn-lg" href="request.html.erb">Let's request a ride!</a></p>
       -->   </div>
 
    </div>

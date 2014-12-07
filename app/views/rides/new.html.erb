@@ -2,224 +2,156 @@
     <head>
         <title>Safe Ride Digital</title>
         <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <style type="text/css">
-      /* Space out content a bit */
-      body {
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-      /* Everything but the jumbotron gets side spacing for mobile first views */
-      .header, .marketing, .footer {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-      /* Custom page header */
-      .header {
-        border-bottom: 1px solid #e5e5e5;
-      }
-      /* Make the masthead heading the same height as the navigation */
-      .header h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-      }
-      /* Custom page footer */
-      .footer {
-        padding-top: 19px;
-        color: #777;
-        border-top: 1px solid #e5e5e5;
-      }
-      .selectpicker {
-
-    border: 1px solid #ccc;
-    width: 268px;
-    padding:5px;
-    line-height:1;
-    overflow: hidden;
-    height:34px;
-
-      }
-
-      .text_field {
-            border: 1px solid #ccc;
-    width: 268px;
-    padding:5px;
-    line-height:1;
-    overflow: hidden;
-    height:34px;
-
-      }
-
-      /* Customize container */
-      @media(min-width: 768px) {
-        .container {
-          max-width: 730px;
-        }
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        text-align: center;
-        border-bottom: 1px solid #e5e5e5;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-      /* Supporting marketing content */
-      .marketing {
-        margin: 40px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-      /* Responsive: Portrait tablets and up */
-      @media screen and(min-width: 768px) {
-        /* Remove the padding we set earlier */
-        .header, .marketing, .footer {
-          padding-left: 0;
-          padding-right: 0;
-        }
-        /* Space out the masthead */
-        .header {
-          margin-bottom: 30px;
-        }
-        /* Remove the bottom border on the jumbotron for visual effect */
-        .jumbotron {
-          border-bottom: 0;
-        }
-      }
-    </style>
-
-<script type="text/javascript">
-function GetClock(){
-var d=new Date();
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear(),nhour=d.getHours(),nmin=d.getMinutes(),ap;
-     if(nhour==0){ap=" AM";nhour=12;}
-else if(nhour<12){ap=" AM";}
-else if(nhour==12){ap=" PM";}
-else if(nhour>12){ap=" PM";nhour-=12;}
-
-if(nyear<1000) nyear+=1900;
-if(nmin<=9) nmin="0"+nmin;
-
-document.getElementById('clockbox').innerHTML=""+(nmonth+1)+"/"+ndate+"/"+nyear+" "+nhour+":"+nmin+ap+"";
-}
-
-window.onload=function(){
-GetClock();
-setInterval(GetClock,1000);
-}
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/3.0.0/amelia/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        
+<script>
+    (function ($) {
+          $(document).ready(function() {
+          $("#show-example").click(function () {
+             if ($('#example').is(":visible")) {
+                 $(this).html($(this).html().replace(/Hide/, 'Show'));
+             } else {
+                 $(this).html($(this).html().replace(/Show/, 'Hide'));
+             }
+             // Do it afterwards as the operation is async
+             $("#example").slideToggle("slow");
+          });
+      });
+  })(jQuery);
 </script>
 
+
+<style type="text/css">
+            /* Space out content a bit */
+            body {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            /* Everything but the jumbotron gets side spacing for mobile first views */
+            .header, .marketing, .footer {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            /* Custom page header */
+            .header {
+                border-bottom: 1px solid #e5e5e5;
+            }
+
+	h2, h3 {
+font-family: helvetica neue;
+}
+
+ h4{
+font-size: 14px;
+}
+            /* Make the masthead heading the same height as the navigation */
+            .header h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: 40px;
+                padding-bottom: 19px;
+            }
+            /* Custom page footer */
+            .footer {
+                padding-top: 19px;
+                color: #777;
+                border-top: 1px solid #e5e5e5;
+            }
+            /* Customize container */
+            @media(min-width: 768px) {
+                .container {
+                    max-width: 730px;
+                }
+            }
+            .container-narrow > hr {
+                margin: 30px 0;
+            }
+            /* Main marketing message and sign up button */
+            .jumbotron {
+                text-align: center;
+                border-bottom: 1px solid #e5e5e5;
+            }
+            .jumbotron .btn {
+                font-size: 21px;
+                padding: 14px 24px;
+            }
+            /* Supporting marketing content */
+            .marketing {
+                margin: 40px 0;
+            }
+            .marketing p + h4 {
+                margin-top: 28px;
+            }
+            /* Responsive: Portrait tablets and up */
+            @media screen and(min-width: 768px) {
+                /* Remove the padding we set earlier */
+                .header, .marketing, .footer {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                /* Space out the masthead */
+                .header {
+                    margin-bottom: 30px;
+                }
+                /* Remove the bottom border on the jumbotron for visual effect */
+                .jumbotron {
+                    border-bottom: 0;
+                }
+            }
+        </style>
     </head>
     
     <body>
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-
-                <li> <strong>Current time:</strong><div id="clockbox"></div> </li>
+                    <!-- <li class="active">
+                        <a href="#">Welcome</a>
+                    </li> -->
+                    <li>
+                        <a href="#dispatch">Dispatch</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
                 </ul><h2 class="text-muted">Safe Ride Digital</h2>
             </div>
             <div class="jumbotron">
-                <h3>Safe Ride Request</b></h3>
+                <h3>Welcome to <b>Safe Ride Digital!</b></h3>
+                <p class="lead"><i>Safe Ride Digital</i> is an online portal to request after-hours transportation from River Campus properties and residences.</p>
 
-<%= form_for :rides, url: rides_path do |f| %>
-  <p>Your full name:</p>
-   <!-- <%= f.label :Name %><br> -->
-   <%= f.text_field :name, { class: "text_field" } %>
-  </p>
+<a id="show-example" onclick="false">I'm new to Safe Ride. May I have more information?</a>
 
-<p>I'm currently located at...</p>
-<!-- <%= f.label :"I am currently located at..." %> <br> -->
-<%= f.select :Present, [["IT Center (Rush Rhees Library)"], ["Carlson"], ["Todd Union"], ["Hill Court"], ["Southside"], ["Riverview Apartments"]], { label: "I am currently located at..." }, { class: "selectpicker" } %>
+<div id="example" style="display: none"> 
+<h4>SafeRide is made possible by the SA Government and UR Security Service. This portal exists as a separate medium to allow students to request pick-ups via their smartphone or laptop (or any device with a Wi-Fi connection). Any difficulties or technicalities that may arise remain independent of the previously mentioned entities.<br><br>
+                <b>Hours of Operation:</b> 11:00 p.m. – 4:00 a.m. everyday during the academic year (no breaks or University holidays)<br>
+                <b>River Campus Locations:</b> IT Center (Rush Rhees Library), Carlson Library, Todd Union<b>
+ <br>Residential Locations:</b> Hill Court, Southside, Riverview Apartments<br>
+</h4>
+ </div> 
+                <p></p>
+                <p>
+<a id="show-example" onclick="false">I'm ready to request a ride!</a>
 
-<br>
-<br>
+<div id="example" style="display:none">
+        <h3>Only University of Rochester undergraduates may use this service. Please sign in with your NetID and password so that we may verify this.</h3>
+      </center>
+      <form class="form-signin">
+        <h2 class="form-signin-heading"></h2>
+        <input type="text" class="form-control" placeholder="NetID">
+        <input type="password" class="form-control" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me">Remember me</label>
+        <p><a class="btn btn-block btn-primary btn-lg" href="home.html">Sign In</a></p>
+        <!-- <button class="btn btn-block btn-primary btn-lg" onlick="#" href="home.html">Sign in</button> -->
+      </form>
+<!-- 
+<a class="btn btn-block btn-link btn-lg" href="request.html.erb">Let's request a ride!</a></p>
+      -->   </div>
 
-<p>Please drop me off at....</p>
-<!-- <%= f.label :"Please drop me off at..." %> <br> -->
-<%= f.select :Dropoff, [["Riverview Apartments"], ["IT Center (Rush Rhees Library)"], ["Carlson Library"], ["Todd Union"], ["Hill Court"], ["Southside"]], { label: "Please drop me off at..." }, { class: "selectpicker" } %>
-
-<br>
-<br>
-<p>Any other passengers tagging along? </p>
-<%= f.select :Passengers, [["Just me!"],["+1 Passenger"], ["+2 Passengers"]], { label: "In addition to myself, also pick up: "}, { class: "selectpicker"} %>
-
-  <p>
-  <!--  <%= f.label :Comments %><br>
-  <p>Comments?</p>
-  <%= f.text_field :Comments %>
-  <br>  -->
-
-  <p>
-    <%= f.submit :Submit! %>
-  </p>
-<% end %>
-
-<!--
-<form>
-
-
-        <li class="input select optional" id="gem_awesomeness_input">
-          <label class="label" for="gem_awesomeness">Pick me up from...</label>
-<select id="gem_awesomeness" name="gem[awesomeness]">
-
-          <option value="1">IT Center (Rush Rhees Library)</option>
-          <option value="2">Carlson Library</option>
-          <option value="3">Todd Union</option>
-          <option value="4">Hill Court</option>
-          <option value="5">Southside</option>
-          <option value="6">Riverview Apartments</option>
-
-          </li>
-
-        <li class="input select optional" id="gem_awesomeness_input">
-          <label class="label" for="gem_awesomeness">Pick me up from...</label>
-<select id="gem_awesomeness" name="gem[awesomeness]">
-
-          <option value="1">IT Center (Rush Rhees Library)</option>
-          <option value="2">Carlson Library</option>
-          <option value="3">Todd Union</option>
-          <option value="4">Hill Court</option>
-          <option value="5">Southside</option>
-          <option value="6">Riverview Apartments</option>
-
-          </li>
-
-
-        <li class="input radio optional">
-          <fieldset class="choices">
-            <label class="label"><label>In addition to myself, please pick up: </label>
-            <ol class="choices-group">
-              <li class="choice">
-                <label><input id="gem_rate_five" name="gem[rate]" type="radio" checked="checked">+1 Passenger</label></label>
-              </li>
-              <li class="choice">
-                <label><input id="gem_rate_four" name="gem[rate]" type="radio">+2 Passengers</label></label>
-              </li>
-              <li class="choice">
-                <label><input id="gem_rate_three" name="gem[rate]" type="radio">+3 Passengers</label></label>
-              </li>
-          </fieldset>
-        </li>
-
-
-    <fieldset class="buttons">
-      <ol>
-        <li class="button commit">
-          <input class="create" id="gem_submit" type="submit">
-        </li>
-      </ol>
-    </fieldset>
--->
    </div>
             <div class="footer">
                 <p>&copy; DMS372 Capstone Project</p>
