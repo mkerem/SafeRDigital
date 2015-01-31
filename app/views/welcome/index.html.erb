@@ -127,13 +127,15 @@ font-size: 14px;
                         <a href="#">Welcome</a>
                     </li> -->
                     <li>
-			
-                        <a href="dispatch#index">Dispatch</a>
+			<%= link_to 'Dispatch', controller: 'dispatch' %>
+                        <!-- <a href="dispatch#index">Dispatch</a> -->
                     </li>
                     <li>
                         <a href="#"></a>
                     </li>
-                </ul><h2 class="text-muted">Safe Ride Digital</h2>
+                </ul>
+                <img src="http://s9.postimg.org/d8h5097mz/SAf1.png" border="0" style="float:left"/>
+                <h2 class="text-muted">Safe Ride Digital</h2>
             </div>
             <div class="jumbotron">
                 <h3>Welcome to <b>Safe Ride Digital!</b></h3>
@@ -154,8 +156,12 @@ font-size: 14px;
 
 
 <div id="example2" style="display:none">
-        <h3>Only University of Rochester undergraduates may use this service. Please sign in with your NetID and password so that we may verify this.</h3>
+        <h3>Only University of Rochester undergraduates may use this service. You will be redirected to sign in momentarily.</h3>
+<!-- Please sign in with your NetID and password so that we may verify this -->
+
       </center>
+
+      <!-- 
 
       <form class="form-signin">
         <h2 class="form-signin-heading"></h2>
@@ -165,15 +171,17 @@ font-size: 14px;
         <input type="checkbox" value="remember-me"><h5 style="text-align:left">Remember me</h5></label></style>
 
         <p><a class="btn btn-block btn-primary btn-lg" href="rides/new">Sign In</a></p>
-        <!-- <button class="btn btn-block btn-primary btn-lg" onlick="#" href="home.html">Sign in</button> 
-</form> -->
+    <! this was originally commented out <button class="btn btn-block btn-primary btn-lg" onlick="#" href="home.html">Sign in</button> 
+</form> -
+
+-->
 <!-- 
 <a class="btn btn-block btn-link btn-lg" href="rides/new">Let's request a ride!</a></p>
       -->   </div>
 
    </div>
             <div class="footer">
-                <p>&copy; DMS372 Capstone Project</p>
+                <p>&copy; DMS372/373 Capstone</p>
             </div>
         </div><!-- /container -->
     </body>
